@@ -11,7 +11,6 @@ build/
 # Results — large files
 results/models/
 results/demos/
-results/videos/
 results/logs/tensorboard/
 results/cartpole/models/
 results/lunarlander/models/
