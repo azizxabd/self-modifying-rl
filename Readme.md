@@ -9,7 +9,7 @@ A hierarchical reinforcement learning system where a **meta-controller** learns 
 
 ## Demo — Robosuite Panda Lift
 
-https://github.com/USER/RL_robosuite/assets/VIDEO_ID/scripted_policy.mp4
+(https://github.com/azizxabd/self-modifying-rl/blob/main/results/videos/scripted_policy.mp4)
 
 > The self-modifying agent switches between MLP and LSTM architectures mid-episode as the environment transitions through Normal → Heavy (3x mass) → Disturbed (random forces) phases.
 
