@@ -1,0 +1,62 @@
+# training/config.yaml
+
+environment:
+  episode_length: 1500
+  phase_duration: 300
+  control_freq: 20
+
+inner_policies:
+  device: "cuda"
+  mlp:
+    features_dim: 128
+    learning_rate: 0.0003
+    n_steps: 1024
+    batch_size: 128
+    n_epochs: 10
+    gamma: 0.99
+    gae_lambda: 0.95
+    clip_range: 0.2
+    ent_coef: 0.01
+    pretrain_timesteps: 1000000        
+  lstm:
+    features_dim: 128
+    hidden_size: 128
+    learning_rate: 0.0003
+    n_steps: 1024
+    batch_size: 128
+    n_epochs: 10
+    gamma: 0.99
+    gae_lambda: 0.95
+    clip_range: 0.2
+    ent_coef: 0.01
+    pretrain_timesteps: 1000000        
+
+meta_controller:
+  n_archs: 2
+  meta_state_dim: 7      # was 6
+  hidden: 64             # was 32
+  lr: 0.001
+  gamma: 0.99
+  switching_cost: 0.3   # was 0.5 — less penalty, more switching exploration
+  decision_interval: 20
+  history_window: 50
+  device: "cuda"
+
+training:
+  seeds: [0, 1, 2,3,4]
+  total_episodes: 500
+  n_envs: 4              # number of parallel envs for pretraining
+  log_interval: 10
+  save_interval: 100
+  results_dir: "results"
+  logs_dir: "results/logs"
+  models_dir: "results/models"
+  videos_dir: "results/videos"
+
+baselines:
+  fixed_ppo_arch: "mlp"
+  heuristic_threshold: 0.0
+  pretrain_timesteps: 1000000        
+  high_capacity_hidden: 256
+  high_capacity_timesteps: 1000000        
+

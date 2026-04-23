@@ -1,0 +1,6 @@
+agent,mean_reward,std_reward,mean_switches,mean_mlp_frac,mean_lstm_frac
+high_capacity,431.6541,146.8081,0.0,0.0,0.0
+fixed_ppo,359.1866,135.8866,0.0,1.0,0.0
+self_modifying,347.2445,26.8892,2.55,0.847,0.153
+heuristic,309.3627,72.6461,1.88,0.907,0.093
+random,225.6725,14.3587,10.5,0.498,0.502

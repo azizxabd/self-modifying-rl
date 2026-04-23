@@ -1,0 +1,6 @@
+agent,mean_reward,std_reward,mean_switches,mean_mlp_frac,mean_lstm_frac,mean_max_height,mean_mean_height,lift_success_rate
+fixed_ppo,537.6015,0.3994,0.0,1.0,0.0,0.8209,0.8209,0.0
+high_capacity,476.6747,4.1753,0.0,0.0,0.0,0.8228,0.8209,0.0
+self_modifying,419.586,5.8177,5.2,0.188,0.812,0.821,0.8209,0.0
+heuristic,-5.522,0.3891,10.66,0.104,0.896,0.821,0.8209,0.0
+random,-298.2945,5.701,36.86,0.5,0.5,0.821,0.8209,0.0

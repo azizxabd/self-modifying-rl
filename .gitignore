@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Results — large files
+results/models/
+results/demos/
+results/videos/
+results/logs/tensorboard/
+results/cartpole/models/
+results/lunarlander/models/
+
+# Keep CSVs and plots
+!results/logs/*.csv
+!results/cartpole/logs/*.csv
+!results/lunarlander/logs/*.csv
+!results/plots/
+
+# MuJoCo
+*.xml.bak
+mujoco_py/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# PyTorch models (too large)
+*.zip
+*.pt
+*.pth
+
+# Misc
+*.log
+.DS_Store
