@@ -172,7 +172,7 @@ RL_robosuite/
 
 ```bash
 # Clone
-git clone https://github.com/USERNAME/RL_robosuite.git
+git clone https://github.com/azizxabd/RL_robosuite.git
 cd RL_robosuite
 
 # Setup venv (Python 3.10)
